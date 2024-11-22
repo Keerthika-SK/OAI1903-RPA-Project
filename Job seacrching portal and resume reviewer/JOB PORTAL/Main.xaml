@@ -1,0 +1,285 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1145.6000000000001,3208.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="jobrole" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt1" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt2" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt3" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="519.2,3185.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="email" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="485.6,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the job role you are looking for:" Title="JOBPORTAL">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[jobrole]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <Sequence sap:VirtualizedContainerService.HintSize="485.6,1088" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com" sap:VirtualizedContainerService.HintSize="449.6,996" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="3ba8a935-86e7-4946-b898-e3a0eb316f9a" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,756" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="3ba8a935-86e7-4946-b898-e3a0eb316f9a" Text="[jobrole]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="naukri.com" DesignTimeRectangle="469, 475, 421, 49" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='suggestor-input ' placeholder='Enter skills / designations / companies' aaname='' /&gt;" Guid="1e7b54a8-298c-4954-aab8-9edcefdee137" InformativeScreenshot="87c5667a96d7549fdf222bf74aaa783d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3ba8a935-86e7-4946-b898-e3a0eb316f9a" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="naukri.com" DesignTimeRectangle="1339, 475, 151, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='qsbSubmit' parentid='root' tag='DIV' type='' aaname='Search' check:innerText='Search' /&gt;" Guid="0e91133b-82bb-41c0-84fb-f3a3815431b4" InformativeScreenshot="16ac4d65d96ea04817d64a1c1948f758.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt1]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Job role'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Year of experience'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Jobdescription'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Location'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='3' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="382.4,182.4" sap2010:WorkflowViewState.IdRef="NExtractData_8" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3ba8a935-86e7-4946-b898-e3a0eb316f9a" Version="V4">
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.naukri.com/java-jobs?k=java" DesignTimeRectangle="634, 306, 700, 8142" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='styles_jlc__main__VdwtF' parentid='listContainer' tag='DIV' /&gt;" Guid="2528717d-cbf2-4aaf-a55f-9ebbc401aa81" InformativeScreenshot="9f241a0b484cfb38aed2b60e70bf22d7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Java Jobs - Job Openings In Java - Naukri.com' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                </uix:NExtractData>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f85f88abc9b6329b9de9710c0822b024.jpg" Selector="&lt;html app='chrome.exe' title='Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com' /&gt;" Title="Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com" Url="https://www.naukri.com/" Version="V1" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+      <Sequence sap:VirtualizedContainerService.HintSize="485.6,862.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 7,00,000+ Job Vacancies in India November 2024 | Recruitment Opportunities - fou" sap:VirtualizedContainerService.HintSize="452,770.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="3ba8a935-86e7-4946-b898-e3a0eb316f9a" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,530.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="3ba8a935-86e7-4946-b898-e3a0eb316f9a" Text="[jobrole + &quot;[k(Enter)]&quot;]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="foundit.in" DesignTimeRectangle="542, 279, 435, 58" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' parentid='heroSectionDesktop-skillsAutoComplete' tag='DIV' class='flex h-full w-full items-center' aaname='' /&gt;" Guid="80bdafc2-b21b-4f1c-aff2-e7e06e5617a9" InformativeScreenshot="ce9ef2934d45614da0da10d3a86f6a41.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='7,00,000+ Job Vacancies in India November 2024 | Recruitment Opportunities - foundit (Formerly Monster)' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt2]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Job role'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Company name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Year of experience'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Location'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="382.4,182.4" sap2010:WorkflowViewState.IdRef="NExtractData_10" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3ba8a935-86e7-4946-b898-e3a0eb316f9a" Version="V4">
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.foundit.in/srp/results?query=Java&amp;searchId=50344512-e5df-479e-bda1-90d8e44fda62" DesignTimeRectangle="227, 352, 623, 5260" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='srpResultCard' parentid='srpContent' tag='DIV' /&gt;" Guid="41263a9f-8905-4a8f-9660-43117f939efa" InformativeScreenshot="debaf43b4511c9cefbf93f1c94df5f6d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='27021 Results Found for &amp;apos;Java&amp;apos; Query | foundit India' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                </uix:NExtractData>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="fdb2ce41801b93922abab5fafc7c4ae5.jpg" Selector="&lt;html app='chrome.exe' title='7,00,000+ Job Vacancies in India November 2024 | Recruitment Opportunities - foundit (Formerly Monster)' /&gt;" Title="Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com" Url="https://www.foundit.in/" Version="V1" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+      <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="485.6,432.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="Job details.xlsx">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,291.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt1]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="382.4,120" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
+              <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt2]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="382.4,111.2" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Sheet2" StartingCell="A1" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ExcelApplicationScope.Body>
+      </ui:ExcelApplicationScope>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="485.6,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter your email id to get the job details" Title="JobPortal">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Dear jobseeker,I hope this email finds you well.Please find attached the latest job opportunities that match your preferences. These have been curated from various platforms to save you time and streamline your job search.If you have any specific preferences or feedback, feel free to reply to this email. We’d be happy to assist you further in your job search journey." DisplayName="Send SMTP Mail Message" Email="220701127@rajalakshmi.edu.in" EnableSSL="True" From="220701127@rajalakshmi.edu.in" sap:VirtualizedContainerService.HintSize="485.6,172" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="Keerthika S" Password="Keerthi@1627" Port="587" SecureConnection="StartTls" Server="smtp.gmail.com" Subject="Your response for job request from job finding portal" To="[email]">
+        <ui:SendMail.Files>
+          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String">C:\Users\Keerthi\OneDrive\문서\UiPath\JOB PORTAL\Job details.xlsx</Literal>
+            </InArgument>
+          </scg:List>
+        </ui:SendMail.Files>
+      </ui:SendMail>
+    </Sequence>
+  </Sequence>
+</Activity>
